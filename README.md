@@ -1,22 +1,49 @@
-# Zhell Consulting Web Kit
+# Zhell Consulting
 
-Este directorio contiene un paquete de implementacion para construir `zhellconsulting.com` en WordPress con Elementor.
+Sitio corporativo estatico para `zhellconsulting.com`, construido en HTML, CSS y JavaScript con una linea visual ejecutiva orientada a directivos y empresas medianas en Mexico.
+
+## Stack
+
+- HTML multipagina
+- CSS personalizado
+- JavaScript vanilla
+- Google Fonts: `Inter` y `Space Mono`
+
+## Paginas
+
+- `index.html`: inicio
+- `servicios.html`: portafolio de servicios
+- `nosotros.html`: perfil de la firma
+- `blog.html`: listado editorial demo
+- `contacto.html`: formulario y datos de contacto
 
 ## Archivos
 
-- [docs/site-blueprint.md](/Users/zahidlopez/Documents/Sitio-Zhell/docs/site-blueprint.md): arquitectura del sitio, copy por pagina, CTAs y SEO.
-- [docs/elementor-build-guide.md](/Users/zahidlopez/Documents/Sitio-Zhell/docs/elementor-build-guide.md): guia de construccion en WordPress + Elementor.
-- [assets/css/elementor-custom.css](/Users/zahidlopez/Documents/Sitio-Zhell/assets/css/elementor-custom.css): variables, utilidades y estilos base para el sitio.
-- [assets/img/logo-zhell.svg](/Users/zahidlopez/Documents/Sitio-Zhell/assets/img/logo-zhell.svg): logo vectorial usado por la version HTML del sitio.
+- [`assets/css/styles.css`](assets/css/styles.css): estilos principales del sitio HTML
+- [`assets/js/components.js`](assets/js/components.js): header, footer, WhatsApp flotante e iconos
+- [`assets/js/main.js`](assets/js/main.js): interacciones globales y comportamiento del formulario demo
+- [`assets/img/logo-zhell.svg`](assets/img/logo-zhell.svg): logo vectorial usado en la version publicada
+- [`docs/site-blueprint.md`](docs/site-blueprint.md): blueprint original de contenido y arquitectura
+- [`docs/elementor-build-guide.md`](docs/elementor-build-guide.md): guia de referencia para una futura implementacion en WordPress + Elementor
+- [`assets/css/elementor-custom.css`](assets/css/elementor-custom.css): hoja base preparada para Elementor
 
-## Uso recomendado
+## Vista local
 
-1. Configurar colores, tipografias y breakpoints globales en Elementor.
-2. Crear header y footer con Theme Builder.
-3. Construir las 5 paginas usando el blueprint como fuente de contenido.
-4. Pegar el CSS base en `Apariencia > Personalizar > CSS adicional` o en el CSS global de Elementor.
-5. Configurar formulario, SEO y WhatsApp flotante.
+Abre `index.html` directamente en el navegador o levanta un servidor estatico simple, por ejemplo:
 
-## Nota de marca
+```bash
+python3 -m http.server 8000
+```
 
-Para la version HTML se agrego una variante SVG editable del logo para evitar depender del PNG original en la publicacion del repositorio.
+Luego visita `http://localhost:8000`.
+
+## Estado del proyecto
+
+- Diseno responsive para desktop, tablet y mobile
+- Componentes reutilizables para navegacion y footer
+- CTA y formulario de contacto en modo demo visual
+- SEO base por pagina con `title` y `meta description`
+
+## Nota
+
+La carpeta `docs/` se conserva como referencia de estrategia y contenido. La version activa del sitio en este repositorio es la implementacion estatica en HTML/CSS/JS.
