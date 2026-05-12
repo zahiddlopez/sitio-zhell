@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto | Diagnostico gratuito de ciberseguridad - Zhell Consulting</title>
+    <meta
+      name="description"
+      content="Agenda una llamada de diagnostico gratuita de 30 minutos con Zhell Consulting y conoce el nivel de exposicion real de tu empresa."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <script defer src="assets/js/components.js"></script>
+    <script defer src="assets/js/main.js"></script>
+  </head>
+  <body data-page="contacto">
+    <site-header></site-header>
+
+    <main>
+      <section class="hero hero--compact">
+        <div class="container hero__copy">
+          <span class="eyebrow">Contacto directo</span>
+          <h1>Hablemos de tu seguridad.</h1>
+          <div class="red-rule"></div>
+          <p>Agenda una llamada de diagnostico gratuita de 30 minutos o escribenos directamente. Sin compromiso.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container contact-grid" id="formulario-contacto">
+          <section class="contact-form">
+            <h2>Solicita una conversacion inicial</h2>
+            <p class="form-note">Este formulario funciona como demo visual. En WordPress se conectaria a Contact Form 7, WPForms o el backend que elijan.</p>
+            <form id="contact-form" class="form-grid">
+              <div class="field">
+                <label for="name">Nombre completo</label>
+                <input id="name" name="name" type="text" placeholder="Tu nombre completo" required />
+              </div>
+              <div class="field">
+                <label for="company">Empresa</label>
+                <input id="company" name="company" type="text" placeholder="Nombre de tu empresa" />
+              </div>
+              <div class="field">
+                <label for="email">Correo electronico</label>
+                <input id="email" name="email" type="email" placeholder="tu@empresa.com" required />
+              </div>
+              <div class="field">
+                <label for="phone">Telefono</label>
+                <input id="phone" name="phone" type="tel" placeholder="Tu telefono" />
+              </div>
+              <div class="field">
+                <label for="message">En que podemos ayudarte?</label>
+                <textarea id="message" name="message" placeholder="Cuentanos brevemente que necesitas o que te preocupa." required></textarea>
+              </div>
+              <div class="btn-row">
+                <button class="btn btn--primary" type="submit">Enviar mensaje</button>
+              </div>
+              <div class="form-success" id="form-success">
+                Gracias. Recibimos tu mensaje y te responderemos en menos de 24 horas habiles.
+              </div>
+            </form>
+          </section>
+
+          <aside class="contact-panel">
+            <h2>Datos de contacto</h2>
+            <ul class="contact-list">
+              <li>
+                <a class="contact-link" href="mailto:contacto@zhellconsulting.com">
+                  <strong>contacto@zhellconsulting.com</strong>
+                  <small>Correo directo para solicitudes comerciales y diagnostico inicial.</small>
+                </a>
+              </li>
+              <li>
+                <a class="contact-link" href="https://wa.me/5215512345678?text=Hola%20Zhell%20Consulting,%20quiero%20agendar%20un%20diagnostico%20gratuito." target="_blank" rel="noreferrer">
+                  <strong>WhatsApp</strong>
+                  <small>Canal directo para coordinar una llamada o resolver dudas iniciales.</small>
+                </a>
+              </li>
+              <li>
+                <a class="contact-link" href="https://zhellconsulting.com" target="_blank" rel="noreferrer">
+                  <strong>zhellconsulting.com</strong>
+                  <small>Sitio corporativo y punto central de informacion.</small>
+                </a>
+              </li>
+            </ul>
+            <p style="margin-top: 22px;">Respondemos en menos de 24 horas en dias habiles.</p>
+            <div class="contact-panel__social">
+              <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
+              <a href="https://www.instagram.com" target="_blank" rel="noreferrer">Instagram</a>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <site-footer></site-footer>
+    <site-whatsapp></site-whatsapp>
+  </body>
+</html>

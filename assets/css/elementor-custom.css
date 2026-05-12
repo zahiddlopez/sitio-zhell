@@ -1,0 +1,296 @@
+:root {
+  --zhell-color-primary: #cc0000;
+  --zhell-color-primary-dark: #a80000;
+  --zhell-color-secondary: #1a2b4a;
+  --zhell-color-text: #0a0a0a;
+  --zhell-color-text-muted: #666666;
+  --zhell-color-surface: #f5f5f5;
+  --zhell-color-border: #e0e0e0;
+  --zhell-color-black: #000000;
+  --zhell-color-white: #ffffff;
+  --zhell-radius-sm: 4px;
+  --zhell-shadow-soft: 0 20px 40px rgba(0, 0, 0, 0.06);
+  --zhell-max-width: 1180px;
+  --zhell-narrow-width: 680px;
+  --zhell-transition: 220ms ease;
+}
+
+body {
+  color: var(--zhell-color-text);
+  background: var(--zhell-color-white);
+  font-family: "Inter", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--zhell-color-text);
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+
+p,
+li,
+label,
+input,
+textarea,
+select {
+  font-family: "Inter", sans-serif;
+}
+
+.zhell-label,
+.zhell-tag,
+.zhell-kicker,
+.zhell-blog-category {
+  font-family: "Space Mono", monospace;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.zhell-section {
+  padding: 88px 24px;
+}
+
+.zhell-section-alt {
+  background: var(--zhell-color-surface);
+}
+
+.zhell-container {
+  width: min(100%, var(--zhell-max-width));
+  margin: 0 auto;
+}
+
+.zhell-narrow-copy {
+  width: min(100%, var(--zhell-narrow-width));
+  margin: 0 auto;
+}
+
+.zhell-hero,
+.zhell-footer,
+.zhell-cta-band {
+  color: var(--zhell-color-white);
+  background: var(--zhell-color-black);
+}
+
+.zhell-hero {
+  position: relative;
+  overflow: hidden;
+  padding: 120px 24px;
+}
+
+.zhell-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 36px 36px;
+  opacity: 0.18;
+  pointer-events: none;
+}
+
+.zhell-hero > * {
+  position: relative;
+  z-index: 1;
+}
+
+.zhell-hero h1,
+.zhell-hero h2,
+.zhell-hero p,
+.zhell-cta-band h2,
+.zhell-cta-band p,
+.zhell-footer,
+.zhell-footer a {
+  color: var(--zhell-color-white);
+}
+
+.zhell-hero-compact {
+  padding-top: 88px;
+  padding-bottom: 72px;
+}
+
+.zhell-red-rule {
+  width: 72px;
+  height: 3px;
+  margin: 20px 0 0;
+  background: var(--zhell-color-primary);
+}
+
+.zhell-red-rule-center {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.zhell-btn,
+.elementor-button.zhell-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0 22px;
+  border-radius: var(--zhell-radius-sm);
+  border: 1px solid transparent;
+  font-weight: 600;
+  text-decoration: none;
+  transition:
+    background-color var(--zhell-transition),
+    border-color var(--zhell-transition),
+    color var(--zhell-transition),
+    transform var(--zhell-transition);
+}
+
+.zhell-btn:hover,
+.elementor-button.zhell-btn:hover {
+  transform: translateY(-1px);
+}
+
+.zhell-btn-primary,
+.elementor-button.zhell-btn-primary {
+  color: var(--zhell-color-white);
+  background: var(--zhell-color-primary);
+}
+
+.zhell-btn-primary:hover,
+.elementor-button.zhell-btn-primary:hover {
+  color: var(--zhell-color-white);
+  background: var(--zhell-color-primary-dark);
+}
+
+.zhell-btn-secondary,
+.elementor-button.zhell-btn-secondary {
+  color: var(--zhell-color-text);
+  border-color: var(--zhell-color-text);
+  background: transparent;
+}
+
+.zhell-btn-secondary:hover,
+.elementor-button.zhell-btn-secondary:hover {
+  color: var(--zhell-color-white);
+  border-color: var(--zhell-color-black);
+  background: var(--zhell-color-black);
+}
+
+.zhell-card {
+  height: 100%;
+  padding: 30px;
+  border: 1px solid var(--zhell-color-border);
+  border-radius: var(--zhell-radius-sm);
+  background: var(--zhell-color-white);
+  transition:
+    border-color var(--zhell-transition),
+    box-shadow var(--zhell-transition),
+    transform var(--zhell-transition);
+}
+
+.zhell-card:hover {
+  border-color: var(--zhell-color-primary);
+  box-shadow: var(--zhell-shadow-soft);
+  transform: translateY(-3px);
+}
+
+.zhell-card p:last-child,
+.zhell-service-block p:last-child {
+  margin-bottom: 0;
+}
+
+.zhell-icon-box .elementor-icon,
+.zhell-icon-box i,
+.zhell-icon-box svg {
+  color: var(--zhell-color-secondary);
+  fill: transparent;
+  stroke: currentColor;
+}
+
+.zhell-service-block {
+  padding: 40px 0;
+  border-top: 1px solid var(--zhell-color-border);
+}
+
+.zhell-service-meta {
+  color: var(--zhell-color-text-muted);
+  font-size: 0.95rem;
+}
+
+.zhell-badge {
+  padding: 24px;
+  border: 1px solid var(--zhell-color-border);
+  border-radius: var(--zhell-radius-sm);
+  background: var(--zhell-color-white);
+}
+
+.zhell-header.is-scrolled,
+.zhell-header[data-scroll="true"] {
+  border-bottom: 1px solid var(--zhell-color-border);
+}
+
+.zhell-blog-card {
+  height: 100%;
+  border-top: 3px solid var(--zhell-color-primary);
+  padding-top: 18px;
+}
+
+.zhell-blog-category {
+  color: var(--zhell-color-secondary);
+  font-size: 0.78rem;
+}
+
+.zhell-form input,
+.zhell-form textarea,
+.zhell-form select {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid var(--zhell-color-border);
+  border-radius: 4px;
+  background: var(--zhell-color-white);
+  color: var(--zhell-color-text);
+}
+
+.zhell-form input:focus,
+.zhell-form textarea:focus,
+.zhell-form select:focus {
+  outline: none;
+  border-color: var(--zhell-color-primary);
+}
+
+.zhell-form textarea {
+  min-height: 160px;
+  resize: vertical;
+}
+
+.zhell-whatsapp-float {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 999;
+}
+
+@media (max-width: 1024px) {
+  .zhell-section {
+    padding: 72px 20px;
+  }
+
+  .zhell-hero {
+    padding: 96px 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .zhell-section {
+    padding: 56px 16px;
+  }
+
+  .zhell-hero,
+  .zhell-hero-compact {
+    padding: 72px 16px 56px;
+  }
+
+  .zhell-card,
+  .zhell-badge {
+    padding: 22px;
+  }
+}
