@@ -87,12 +87,12 @@ function buildHeader(activePage) {
         <a class="site-logo" href="index.html" aria-label="Zhell Consulting">
           <img src="assets/img/logo_zhell.png" alt="Zhell Consulting logo" />
         </a>
-        <nav class="site-nav" id="site-nav" aria-label="Navegacion principal">
+        <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
           ${navLinks}
         </nav>
         <div class="header-actions">
-          <a class="btn btn--primary" href="contacto.html#formulario-contacto">Contactanos</a>
-          <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="site-nav">
+          <a class="btn btn--primary" href="contacto.html#formulario-contacto">Contáctanos</a>
+          <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="site-nav">
             <span class="menu-toggle__bar"></span>
           </button>
         </div>
@@ -108,10 +108,10 @@ function buildFooter() {
         <div class="site-footer__inner">
           <div class="site-footer__brand">
             <img src="assets/img/logo_zhell.png" alt="Zhell Consulting logo" />
-            <p>Firma boutique de ciberseguridad enfocada en forense digital, pentesting y consultoria estrategica para empresas del sector privado en Mexico.</p>
+            <p>Firma boutique de ciberseguridad enfocada en forense digital, pentesting y consultoría estratégica para empresas del sector privado en México.</p>
           </div>
           <div>
-            <h3>Navegacion</h3>
+            <h3>Navegación</h3>
             <ul>
               <li><a href="index.html">Inicio</a></li>
               <li><a href="servicios.html">Servicios</a></li>
@@ -124,14 +124,14 @@ function buildFooter() {
             <h3>Contacto</h3>
             <ul>
               <li><a href="mailto:contacto@zhellconsulting.com">contacto@zhellconsulting.com</a></li>
-              <li><a href="https://wa.me/5215512345678?text=Hola%20Zhell%20Consulting,%20quiero%20agendar%20un%20diagnostico%20gratuito." target="_blank" rel="noreferrer">WhatsApp</a></li>
-              <li><a href="https://www.linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a></li>
-              <li><a href="https://www.instagram.com" target="_blank" rel="noreferrer">Instagram</a></li>
+              <li><a href="https://wa.me/5215512345678?text=Hola%20Zhell%20Consulting,%20quiero%20agendar%20un%20diagn%C3%B3stico%20gratuito." target="_blank" rel="noreferrer">WhatsApp</a></li>
+              <li><a href="https://www.linkedin.com/company/zhell-consulting/" target="_blank" rel="noreferrer">LinkedIn</a></li>
+              <li><a href="https://www.instagram.com/zhellconsulting" target="_blank" rel="noreferrer">Instagram</a></li>
             </ul>
           </div>
         </div>
         <div class="site-footer__bottom">
-          (c) 2025 Zhell Consulting. Todos los derechos reservados.
+          © 2026 Zhell Consulting. Todos los derechos reservados.
         </div>
       </div>
     </footer>
@@ -141,7 +141,7 @@ function buildFooter() {
 function buildWhatsApp() {
   return `
     <div class="wa-float" aria-label="WhatsApp">
-      <a href="https://wa.me/5215512345678?text=Hola%20Zhell%20Consulting,%20quiero%20agendar%20un%20diagnostico%20gratuito." target="_blank" rel="noreferrer">
+      <a href="https://wa.me/5215512345678?text=Hola%20Zhell%20Consulting,%20quiero%20agendar%20un%20diagn%C3%B3stico%20gratuito." target="_blank" rel="noreferrer">
         <svg viewBox="0 0 24 24" aria-hidden="true">
           <path d="M20.5 11.8c0 4.8-3.9 8.7-8.7 8.7-1.5 0-3-.4-4.2-1.1L3 20.8l1.5-4.4a8.6 8.6 0 0 1-1.4-4.6C3.1 7 7 3.1 11.8 3.1s8.7 3.9 8.7 8.7zM8.1 7.4c-.3-.7-.7-.7-1-.7h-.8c-.3 0-.8.1-1.2.6-.4.5-1.6 1.6-1.6 3.9s1.7 4.5 1.9 4.8c.2.3 3.2 5.1 7.8 6.9 3.8 1.5 4.6 1.2 5.4 1.1.8-.1 2.5-1 2.8-2 .4-1 .4-1.9.3-2-.1-.2-.3-.3-.7-.5s-2.5-1.2-2.9-1.4c-.4-.1-.7-.2-1 .2-.3.4-1.1 1.4-1.3 1.6-.2.2-.5.3-.9.1-.5-.2-2-.7-3.8-2.3-1.4-1.2-2.3-2.7-2.6-3.2-.3-.5 0-.7.2-1 .2-.2.4-.5.7-.8.2-.3.3-.5.5-.8.2-.3.1-.6 0-.8-.1-.3-.9-2.3-1.3-3.1z"/>
         </svg>
