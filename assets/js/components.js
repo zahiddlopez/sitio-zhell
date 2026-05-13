@@ -85,7 +85,7 @@ function buildHeader(activePage) {
     <header class="site-header" id="site-header">
       <div class="container site-header__inner">
         <a class="site-logo" href="index.html" aria-label="Zhell Consulting">
-          <img src="assets/img/logo-zhell.svg" alt="Zhell Consulting logo" />
+          <img src="assets/img/logo_zhell.png" alt="Zhell Consulting logo" />
         </a>
         <nav class="site-nav" id="site-nav" aria-label="Navegacion principal">
           ${navLinks}
@@ -107,7 +107,7 @@ function buildFooter() {
       <div class="container">
         <div class="site-footer__inner">
           <div class="site-footer__brand">
-            <img src="assets/img/logo-zhell.svg" alt="Zhell Consulting logo" />
+            <img src="assets/img/logo_zhell.png" alt="Zhell Consulting logo" />
             <p>Firma boutique de ciberseguridad enfocada en forense digital, pentesting y consultoria estrategica para empresas del sector privado en Mexico.</p>
           </div>
           <div>

@@ -35,20 +35,7 @@ function setupHeaderBehavior() {
   }
 }
 
-function setupContactFormDemo() {
-  const form = document.getElementById("contact-form");
-  const success = document.getElementById("form-success");
-  if (!form || !success) return;
-
-  form.addEventListener("submit", (event) => {
-    event.preventDefault();
-    success.classList.add("is-visible");
-    form.reset();
-  });
-}
-
 document.addEventListener("DOMContentLoaded", () => {
   injectServiceIcons();
   setupHeaderBehavior();
-  setupContactFormDemo();
 });
